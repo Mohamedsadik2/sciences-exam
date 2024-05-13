@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Movie</title>
+</head>
+<body>
+    <h1>Add a New Movie</h1>
+    <form method="post">
+        Title: <input type="text" name="title"><br>
+        Genre: <input type="text" name="genre"><br>
+        Actors: <input type="text" name="actors"><br>
+        Publication Year: <input type="number" name="publication_year"><br>
+        <input type="submit" value="Add Movie">
+    </form>
+    <a href="{{ url_for('movies') }}">Back to Movie List</a>
+</body>
+</html>
